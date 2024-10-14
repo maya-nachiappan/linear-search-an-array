@@ -1,0 +1,1 @@
+This is a program that implements the linear search algorithm. It has a function for finding a value in an integer array, and if the target value exists, it returns its index; otherwise it returns -1;
