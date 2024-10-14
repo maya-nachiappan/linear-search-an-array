@@ -8,9 +8,9 @@
 #include <iostream>
 using namespace std;
 
-int linearSearch(int arr[], int size, int target) 
+int linearSearch(int arr[], int size, int target) // creates linear search function
 {
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; ++i) { // searches array for target value
         if (arr[i] == target) {
             return i; // Return the index if the target is found
         }
@@ -32,12 +32,12 @@ int main()
     // Ask the user to input the elements
     cout << "Enter " << size << " integers:" << endl;
     for (int i = 0; i < size; ++i) {
-        cin >> arr[i];
+        cin >> arr[i]; // inputs elements in array indexes
     }
 
     int target;
     cout << "Enter the value to search for: " << endl;
-    cin >> target;
+    cin >> target; // gets target value from user
 
     // uses linear search function previously created
     int index = linearSearch(arr, size, target);
